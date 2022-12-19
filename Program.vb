@@ -27,7 +27,11 @@ Module Program
         'QuizVb.No11()
         'QuizVb.No12()
         'QuizVb.No13()
-        ModulePartTwo.InitEmployee()
+        'ModulePartTwo.InitEmployee()
+        ModuleArray.DisplayArray()
+        ModuleArray.InitListGeneric()
+
+
 
 
 
