@@ -4,16 +4,12 @@
 
         Private _transportasi As Double
 
-        Public Sub New(firstName As String, lastName As String, joinDate As Date, basicSalary As Double, Optional transportasi As Double = Nothing)
-            MyBase.New(firstName, lastName, joinDate, basicSalary)
+        Public Sub New(firstName As String, lastName As String, joinDate As Date, role As String, basicSalary As Double, Optional transportasi As Double = Nothing)
+            MyBase.New(firstName, lastName, joinDate, role, basicSalary)
             _transportasi = transportasi
             MyBase.TotalSalary = MyBase.BasicSalary + transportasi
         End Sub
 
-        Public Overrides Function ToString() As String
-            Return $"{MyBase.ToString()},
-tjTransport: {_transportasi}"
-        End Function
 
         Public Property Transportasi As Double
             Get
@@ -24,6 +20,10 @@ tjTransport: {_transportasi}"
                 TotalSalary = value + BasicSalary
             End Set
         End Property
+        Public Overrides Function ToString() As String
+            Return $"{MyBase.ToString()},
+tjTransport: {_transportasi}"
+        End Function
 
         Public Overrides Property BasicSalary As Double
             Get
