@@ -5,7 +5,7 @@ Imports VBConsoleApp1.PartTwo
 
 Module Program
     Sub Main(args As String())
-        Console.WriteLine("Day 3")
+        Console.WriteLine("Day 4")
         'ModuleDecision.WhoIsTheGreatest()
         'ModuleDateTime.ShowDate()
         'ModuleIteration.DoWhile(10)
@@ -32,19 +32,21 @@ Module Program
         'ModuleArray.InitListGeneric()
 
         'Calling Interface
-        Dim interfacehr As IHR = New HR  'declare variable with interface datatype as object classimplement
-        Dim listemp = interfacehr.InitEmployee  'storing initiating employee into variable
-        interfacehr.DisplayEmployee(listemp)
-        Console.WriteLine()
-        Dim id As Integer = 1
+        'Dim interfacehr As IHR = New HR  'declare variable with interface datatype as object classimplement
+        'Dim listemp = interfacehr.InitEmployee  'storing initiating employee into variable
+        'interfacehr.DisplayEmployee(listemp)
+        'Console.WriteLine()
+        'Dim id As Integer = 1
 
-        Dim emp = interfacehr.FindEmployeeById(1, listemp)
-        'console.write(emp)
+        'Dim emp = interfacehr.FindEmployeeById(1, listemp)
+        ''console.write(emp)
 
-        If emp IsNot Nothing Then
-            Console.WriteLine($"employee found : {emp}")
-        Else
-            Console.WriteLine($"cannot found employee with id {id}")
-        End If
+        'If emp IsNot Nothing Then
+        '    Console.WriteLine($"employee found : {emp}")
+        'Else
+        '    Console.WriteLine($"cannot found employee with id {id}")
+        'End If
+
+        ModuleLinq.Test()
     End Sub
 End Module

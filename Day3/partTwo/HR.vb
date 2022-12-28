@@ -13,7 +13,7 @@
         Public Function InitEmployee() As List(Of Employee) Implements IHR.InitEmployee
             Dim listEmps As New List(Of Employee) From {
             New Employee(1, "Gabriel", "Halsya", DateTime.Now, 5_000),
-            New Employee("Gabriel", "Halsya", DateTime.Now, 5_000),
+            New Employee(1, "Gabriel", "Halsya", Date.Now, 5_000),
             New Programmer("GabrielH", "Halsya", DateTime.Now, 5_600, 2_00)
             }
             Return listEmps
